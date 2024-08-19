@@ -1,0 +1,53 @@
+.skillsMain{
+  background: #81976F;
+  padding: 40px 100px;
+}
+.progressBars{
+  flex: 5 1 0;
+}
+.description{
+  flex: 4 1 0;
+  margin: 0 0 0 80px;
+}
+.progressBars > div:not(:last-child){
+  margin-bottom: 30px;
+}
+.progressBars p{
+  font-size: 15px;
+  font-weight: 600;
+}
+.bars_description{
+  display:'flex';  
+  justify-content: space-between;
+}
+
+
+@media (max-width: 1250px){
+  .skillsMain{
+    padding: 40px 50px;
+  }
+  .progressBars{
+    flex: 4 1 0;
+  }
+  .description{
+    flex: g 1 0;
+  }
+}
+
+@media (max-width: 1100px){
+  .bars_description{
+    flex-direction: column;
+  }
+  .description{
+    margin: 30px 0 0 0;
+  }
+  .progressBars{
+    padding: 0 80px 0 30px;
+  }
+}
+
+@media (max-width: 550px){
+  .progressBars{
+    padding: 0 20px 0 0;
+  }
+}

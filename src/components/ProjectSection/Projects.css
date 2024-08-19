@@ -1,0 +1,73 @@
+.projectMain{
+  background-color: #738E5D;
+  padding: 40px 100px;
+  width: 100%;
+  font-Family: 'Quicksand'
+}
+.projectBody{
+  margin: 0 10px 50px 20px;
+}
+.projectDescriptionContainer{
+  background-color: #81976F;
+  border-radius: 8px;
+}
+.projectDescription{
+  padding: 50px;
+}
+.projectDescription > p{
+  font-size: larger;
+  font-weight: bold;
+}
+.projectContainer {
+  width: 100%;
+  position: relative;
+}
+.projectWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.projectSlider {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+  width: 100%;
+}
+.projectCard {
+  min-width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projectsArrowButton {
+  position: absolute;
+  top: 50%; 
+  transform: translateX(-150%);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.projectsArrowButton:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+.projectsArrowButton.projectsLeft {
+  left: 10px;
+  transform: translateX(-150%) translateY(200%);
+}
+.projectsArrowButton.projectsRight {
+  right: 10px;
+  transform: translateX(150%) translateY(200%);
+}
+@media (max-width: 700px){
+  .projectMain{
+    background-color: #738E5D;
+    padding: 40px 50px;
+  }
+  .projectsArrowButton {
+    font-size: smaller;
+    padding: 5px;
+  }
+}

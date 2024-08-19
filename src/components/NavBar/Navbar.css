@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300');
+
+body{
+  font-family: 'Quicksand';
+}
+
+.brand-logo {
+  height: 50px;
+}
+
+.navBarLink .nav-link {
+  margin-left: 50px;
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.navBarLink .nav-link:hover {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: underline;
+  transition: font-weight 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .navBarLink .nav-link:hover {
+    border-radius: 20px;
+    background: #7c9b80;
+  }
+
+  .brand-logo {
+    display: none;
+  }
+}

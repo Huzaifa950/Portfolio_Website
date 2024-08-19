@@ -1,0 +1,182 @@
+
+.contactContainer{
+  background-color: #4b5e3e;
+  padding: 40px 100px;
+  width: 100%;  
+  word-wrap: break-word;
+}
+
+.contactBody{
+  max-width: 60%;
+}
+
+.contactCard{
+  display: flex;
+  max-width: 100%;
+  color: #4b5e3e;
+}
+
+.contactSocialMedia > .socialIcon:hover{
+  transition: border 0.3s ease-in-out;
+  border: 3px #000000 solid;
+  border-radius: 50%;
+}
+
+.contactCardLeftBody > div:not(:last-child){
+  margin: 0 0 40px 0;
+}
+
+.contactCardLeftBody > div{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.contactCardRight{
+  background-color: #9daf8f; 
+  padding: 50px 40px; 
+  flex: 0 0 70%;
+}
+
+.contactCardRightHeading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactCardRightHeading > p{
+  margin-bottom: 50px;
+}
+
+.contactNameEmail{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactFormMain label{
+  font-size: large;
+  font-weight: bold;
+}
+
+.contactSocialMedia{
+  margin-top: 100px;
+}
+
+.contactFormMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.contactFormMain input, .contactFormMain textarea{
+  border-style: none;
+  border: 2px solid #4b5e3e;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: #9daf8f;
+}
+
+.contactFormMain > div:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.contactButton {
+  text-align: right;
+  align-items: flex-end;
+}
+.sendMessageIcon{
+  font-size: 35px;
+  color: #536845; 
+}
+
+.sendMessageIcon :hover{
+  color:#38442f;
+  transition: color 0.3s ease-in-out;
+}
+
+.contactButton {
+  position: relative;
+  display: inline-block;
+}
+
+/* .sendMessageIcon {
+  font-size: 24px;
+  color: #000;
+} */
+
+.hoverMessage {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 110%;
+  transform: translateX(-50%);
+  background-color: #c9ddb9;
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.contactButton:hover .hoverMessage {
+  display: block;
+}
+
+
+@media (max-width: 1150px){
+  .contactNameEmail{
+    flex-direction: column;
+  }
+  .contactName{
+    margin-bottom: 20px;
+  }
+  .contactContainer{
+    padding: 40px 100px;
+  }
+  .contactBody{
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1000px){
+  .contactCard{
+    flex-direction: column;
+  }
+  .contactCardLeftBody{
+    max-width: 80%;
+  }
+  .contactCardLeftBody > div{
+    gap: 40px;
+  }
+  .contactCardRightHeading p :not(:first-child){
+    border: 1px solid black;
+  }
+}
+@media (max-width: 750px){
+  .contactCardRightHeading{
+    flex-direction: column;
+    text-align: center;
+  }
+  .contactCardRightHeading > p{
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px){
+  .contactFormMain{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .contactCardLeftBody{
+    max-width: 90%;
+    gap: 10px;
+  }
+  .contactContainer{
+    padding: 40px 50px;
+  }
+  .contactButton{
+    margin: 0 25px;
+  }
+
+}

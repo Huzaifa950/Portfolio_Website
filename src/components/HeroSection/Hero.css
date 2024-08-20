@@ -1,0 +1,128 @@
+.mainHero{
+  font-Family: 'Quicksand';
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 85%;
+  margin: 0 auto;
+}
+.smallIntro {
+  font-size: 15px;
+  width: 70%;
+}
+.imageStyle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #475749;
+  padding: 20px;
+}
+.heroSocialMedia > .socialIcon{
+  margin: 50px 0 0 30px;
+}
+.heroSocialMedia > .socialIcon:hover{
+  border: 3px #000000 solid;
+  border-radius: 50%;
+  transition: border 0.3s ease-in-out;
+}
+.CV_Section{
+  text-align: center;
+}
+.hero_CV{
+  margin: 50px 0 0 30px;
+  border: none;
+  font-size: medium;
+  background-color: #677D6A;
+  padding: 8px 15px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+.hero_CV::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 3px solid rgb(255, 255, 255);
+  border-right: 3px solid rgb(0, 0, 0);
+  animation: border-top 3s infinite alternate;
+}
+.hero_CV::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 3px solid rgb(15, 14, 14);
+  border-left: 3px solid white;
+  animation: border-top 3s infinite alternate;
+}
+@keyframes border-top {
+  0% {width: 0px; height: 0px;}
+  50% {width: 127px; height: 0px;}
+  100% {width: 127px; height: 60px;}
+}
+.hero_CV:hover{
+  background-color: #475749;
+  transition: all 0.3s ease-in-out;
+}
+
+.tilt-box {
+  transition: transform 0.2s ease-in-out;
+  margin-top: 50px;
+}
+
+.imageStyle {
+  height: auto;
+  border-radius: 50%; 
+}
+
+.tilt-box:hover .imageStyle {
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5), 
+              0 6px 20px rgba(0, 0, 0, 0.50);
+}
+
+@keyframes moveFromLeftToRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.role, .smallIntro{
+  display: inline-block;
+  animation: none; /* Default state, no animation */
+}
+
+.role.animate, .smallIntro.animate {
+  animation: moveFromLeftToRight 2s ease-in-out;
+  /* Ensure animation plays every time it is added */
+}
+
+@media (max-width: 700px){
+  .mainHero{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .smallIntro {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .textStyle{
+    margin: 0 0 50px 0;
+  }
+  .imageStyle{
+    width: 250px;
+    height: 250px;
+    margin: 0 0 50px 0;
+  }
+}

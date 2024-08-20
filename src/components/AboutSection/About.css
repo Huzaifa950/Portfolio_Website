@@ -1,0 +1,41 @@
+.aboutMain{
+  background-color: #9daf8f;
+}
+.aboutCards{
+  margin-bottom: 30px;
+}
+.aboutCards:hover{
+  border-top: 5px solid black;
+  transition: border 0.3s ease-in-out;
+}
+.aboutHeading > p{
+  padding: 40px 120px 0 120px;
+}
+.aboutStory > p{
+  max-width: 90%;
+  padding: 20px 150px;
+}
+
+
+.aboutStory {
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  opacity: 1;
+}
+
+.aboutStory.visible {
+  opacity: 0;
+  transform: translateX(200PX);
+}
+
+@media (max-width: 1060px){
+  .aboutStory > p{
+    max-width: 100%;
+  }
+  .aboutHeading > p{
+    padding: 40px 60px 0 60px;
+  }
+  .aboutStory > p{
+    max-width: 95%;
+    padding: 20px 80px;
+  }
+}

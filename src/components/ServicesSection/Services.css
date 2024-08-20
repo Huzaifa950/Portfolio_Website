@@ -1,0 +1,165 @@
+html {
+  scroll-behavior: smooth;
+}
+.servicesMain {
+  background-color: #5F754D;
+  padding: 40px 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.servicesBox {
+  display: flex;
+  justify-content: space-between;
+}
+.servicesHeading{
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+}
+
+.servicesBoxLeft {
+  flex: 0 0 30%;
+}
+.servicesBoxLeftHead{
+  font-size: 50px; 
+  font-weight: bold; 
+  text-transform: uppercase;
+}
+
+.servicesBoxRight {
+  flex: 0 0 60%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.serviceWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.serviceSlider {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+  width: 100%;
+}
+
+.serviceCard {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicesArrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-150%);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.servicesArrowButton:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+.servicesArrowButton.servicesLeft {
+  left: 10px;
+  transform: translateX(-100%) translateY(-100%);
+}
+.servicesArrowButton.servicesRight {
+  right: 10px;
+  transform: translateX(100%) translateY(-100%);
+}
+.servicesContact{
+  text-align: center;
+  margin: 30px 0;
+}
+.servicesContactButton{
+  margin: 50px 0 30px 0;
+  border: none;
+  font-size: medium;
+  background-color: #738E5D;
+  padding: 8px 15px;
+  font-weight: bold;
+  position: relative;
+}
+.servicesContactButton::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 3px solid rgb(255, 255, 255);
+  border-right: 3px solid rgb(0, 0, 0);
+  animation: border-top 3s infinite alternate;
+}
+.servicesContactButton::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 3px solid rgb(15, 14, 14);
+  border-left: 3px solid white;
+  animation: border-top 3s infinite alternate;
+}
+@keyframes border-top  {
+  0% {width: 0px; height: 0px;}
+  50% {width: 127px; height: 0px;}
+  100% {width: 127px; height: 60px;}
+}
+.servicesContactButton:hover{
+  background-color: #9daf8f;
+  transition: background-color 0.3s ease-in-out;
+}
+@media (max-width: 1199px){
+  .servicesArrowButton.servicesLeft {
+    transform: translateX(250%);
+  }
+  .servicesArrowButton.servicesRight {
+    transform: translateX(-250%);
+  }
+  .servicesBoxLeft {
+    flex: 0 0 40%;
+  }
+  .servicesBoxRight {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .servicesBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicesArrowButton.servicesLeft  {
+    transform: translateX(-150%);
+  }
+  .servicesArrowButton.servicesRight {
+    transform: translateX(150%);
+  }
+}
+@media (max-width: 700px) {
+  .servicesMain {
+    padding: 40px 50px;
+  }
+  .servicesArrowButton {
+    font-size: smaller;
+    padding: 5px;
+  }
+}
+@media (max-width: 700px){
+  .servicesBoxLeftHead{
+    font-size: 40px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+  }
+}

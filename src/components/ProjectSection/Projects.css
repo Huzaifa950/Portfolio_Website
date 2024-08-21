@@ -4,8 +4,13 @@
   width: 100%;
   font-Family: 'Quicksand'
 }
-.projectBody{
+/* .projectBody{
   margin: 0 10px 50px 20px;
+} */
+
+.projectBody > p{
+  max-width: 90%;
+  padding: 0px 80px 50px 80px;
 }
 .projectDescriptionContainer{
   background-color: #81976F;
@@ -61,10 +66,22 @@
   right: 10px;
   transform: translateX(150%) translateY(200%);
 }
+
+@media (max-width: 1060px){
+  .projectBody > p{
+    max-width: 100%;
+    padding: 20px 50px;
+  }
+}
+
 @media (max-width: 700px){
   .projectMain{
     background-color: #738E5D;
     padding: 40px 50px;
+  }
+  .projectBody > p{
+    max-width: 100%;
+    padding: 20px 20px;
   }
   .projectsArrowButton {
     font-size: smaller;

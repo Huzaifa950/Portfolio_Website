@@ -40,7 +40,7 @@ const About = () => {
         className="aboutHeading"
         style={{ fontSize: "xx-large", fontWeight: "bold" }}
       >
-        <p style={{ textTransform: "uppercase", margin:'0 0 50px 0' }}>About</p>
+        <p style={{ textTransform: "uppercase", margin:'0 0 30px 0' }}>About</p>
       </div>
       <div className={`aboutStory ${isVisible ? 'visible' : ''}`} ref={storyRef}>
         <p>

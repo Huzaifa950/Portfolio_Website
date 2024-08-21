@@ -81,7 +81,7 @@ const Projects = () => {
           style={{
             fontSize: "xx-large",
             fontWeight: "bold",
-            margin: "0 0 50px 0",
+            margin: "0 0 30px 0",
           }}
         >
           <p style={{ textTransform: "uppercase" }}>My Work</p>

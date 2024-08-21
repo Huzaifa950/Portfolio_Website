@@ -123,6 +123,12 @@
   .imageStyle{
     width: 250px;
     height: 250px;
-    margin: 0 0 50px 0;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+  }
+  .tilt-box{
+    align-items: center;
+    text-align: center;
   }
 }

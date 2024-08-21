@@ -9,7 +9,7 @@
   transition: border 0.3s ease-in-out;
 }
 .aboutHeading > p{
-  padding: 40px 120px 0 120px;
+  padding: 40px 100px 0 100px;
 }
 .aboutStory > p{
   max-width: 90%;
@@ -28,9 +28,6 @@
 }
 
 @media (max-width: 1060px){
-  .aboutStory > p{
-    max-width: 100%;
-  }
   .aboutHeading > p{
     padding: 40px 60px 0 60px;
   }

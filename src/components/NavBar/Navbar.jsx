@@ -39,6 +39,7 @@ const NavbarComp = ({ scrollToSection, refs, navbarRef }) => {
               <Nav.Link href="#about" onClick={() => handleNavClick(refs.aboutRef)}>About</Nav.Link>
               <Nav.Link href="#skills" onClick={() => handleNavClick(refs.skillsRef)}>Skills</Nav.Link>
               <Nav.Link href="#projects" onClick={() => handleNavClick(refs.projectsRef)}>Projects</Nav.Link>
+              <Nav.Link href="#experiences" onClick={() => handleNavClick(refs.experiencesRef)}>Experiences</Nav.Link>
               <Nav.Link href="#services" onClick={() => handleNavClick(refs.servicesRef)}>Services</Nav.Link>
               <Nav.Link href="#contact" onClick={() => handleNavClick(refs.contactRef)}>Contact</Nav.Link>
             </Nav>

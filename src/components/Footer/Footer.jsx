@@ -52,6 +52,7 @@ const Footer = () => {
             <a href="#aboutMain" className="">About</a>
             <a href="#skillsMain" className="">Skills</a>
             <a href="#projectMain" className="">Projects</a>
+            <a href="#experienceMain" className="">Experiences</a>
             <a href="#servicesMain" className="">Services</a>
             <a href="#contactMain" className="">Contact</a>
           </div>

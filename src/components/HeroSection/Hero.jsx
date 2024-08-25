@@ -65,7 +65,7 @@ const Hero = () => {
             <p style={role}
               className={`role ${isVisible ? 'animate' : ''}`}
               ref={roleRef}>Associate Software Engineer.</p>
-            <p class="smallIntro" className={`smallIntro ${isVisible ? 'animate' : ''}`}>Hi, This is Muhammad Huzaifa, a passionate Associate Software Engineer at Burnt Brains. I am 2024 graduate from Government College University, Lahore.</p>
+            <p class="smallIntro" className={`smallIntro ${isVisible ? 'animate' : ''}`}><br />Hi, This is Muhammad Huzaifa, a passionate Associate Software Engineer at Burnt Brains. I am 2024 graduate from Government College University, Lahore.</p>
           </div>
 
           <div className="heroSocialMedia">

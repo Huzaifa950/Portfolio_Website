@@ -2,7 +2,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { SocialIcon } from 'react-social-icons'
 import imageUrl from "../../assets/PersonalPhoto.png";
-import dummyProfile from "../../assets/DummyProfile.jpg";
+// import dummyProfile from "../../assets/DummyProfile.jpg";
+import personalPortfolio from "../../assets/Portfolio_Photo.png";
 import Tilt from 'react-parallax-tilt';
 import './Hero.css';
 
@@ -82,7 +83,7 @@ const Hero = () => {
         </div>
         <div>
           <Tilt className="tilt-box" options={{ max: 50 }}>
-            <img src={dummyProfile} alt="User" className="imageStyle" />
+            <img src={personalPortfolio} alt="User" className="imageStyle" />
           </Tilt>
         </div>
       </div>

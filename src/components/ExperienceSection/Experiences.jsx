@@ -31,7 +31,7 @@ function Experiences() {
     };
   }, []);
 
-  
+
   return (
 
     <div id='experienceMain' className='experienceMain'>

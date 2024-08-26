@@ -173,3 +173,9 @@ body{
     left: -15px;
   }
 }
+
+@media (max-width: 500px){
+  .experienceMain{
+    padding: 40px 30px;
+  }
+}

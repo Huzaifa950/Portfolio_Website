@@ -99,8 +99,6 @@
   .projectMain{
     padding: 40px 40px;
   }
-  .projectWrapper {
-  }
   .projectsArrowButton.projectsLeft {
     transform: translateX(-160%) translateY(500%);
   }

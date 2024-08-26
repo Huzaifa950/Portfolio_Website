@@ -40,7 +40,7 @@ const Contact = () => {
       const { result, score } = response.data.data;
 
       if (result !== 'deliverable' || score < 80) {
-        setEmailError('Invalid Email Address');
+        setEmailError('Abey! Invalid Email Address');
         return false;
       }
 

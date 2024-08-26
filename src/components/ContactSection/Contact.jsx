@@ -70,7 +70,7 @@ const Contact = () => {
         </div>
 
         <div className="contactCard" >
-          <div className="contactCardLeft" style={{ backgroundColor: '#B6C7AA', padding: "50px 40px", flex: '0 0 30%' }}>
+          <div className="contactCardLeft" style={{ backgroundColor: '#B6C7AA', flex: '0 0 30%' }}>
             <div className="contactCardLeftHeading" style={{ fontSize: 'x-large', fontWeight: 'bold', margin: '0 0 50px 0', textAlign: 'center' }}>
               <p>Contact Information</p>
             </div>
@@ -95,7 +95,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="contactCardRight" style={{ backgroundColor: '#9daf8f', padding: "50px 40px", flex: '0 0 70%' }}>
+          <div className="contactCardRight" style={{ backgroundColor: '#9daf8f', flex: '0 0 70%' }}>
             <div className="contactCardRightHeading" style={{ fontSize: 'x-large', fontWeight: 'bold', margin: '0 0 20px 0' }}>
               <p>Reach Out To Me</p>
               <div className="toastMessage">

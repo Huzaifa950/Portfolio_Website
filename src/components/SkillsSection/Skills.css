@@ -20,6 +20,9 @@
   display:'flex';  
   justify-content: space-between;
 }
+.descriptionBody{
+  padding: 20px 80px;
+}
 
 
 @media (max-width: 1250px){
@@ -44,6 +47,9 @@
   .progressBars{
     padding: 0 80px 0 30px;
   }
+  .descriptionBody{
+    padding: 20px 50px;
+  }
 }
 
 @media (max-width: 550px){
@@ -55,5 +61,8 @@
 @media (max-width: 500px){
   .skillsMain{
     padding: 40px 30px;
+  }
+  .descriptionBody{
+    padding: 20px;
   }
 }

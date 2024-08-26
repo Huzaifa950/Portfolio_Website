@@ -86,7 +86,7 @@ function Skills() {
         </div>
         <div className='description'>
           <p style={{ fontSize: '18px', fontWeight: '700', textDecoration: "underline", margin: '20px 0' }}>Description</p>
-          <p>
+          <p className='descriptionBody'>
             I have developed multiple pages using <b><i>HTML and CSS</i></b>, which greatly enhanced my foundational skills in basic development. Additionally, I have tackled various tasks using pure <b><i>JavaScript</i></b>, such as updating HubSpot Deal Owners based on specific requirements and optimizing existing code for improved professionalism and efficiency. <br />My experience extends to creating custom cards in HubSpot using <b><i>React</i></b>, where I gained valuable hands-on experience and insights into React components. I have also worked extensively with <b><i>HubSpot CRM</i></b>, including designing and implementing workflows from scratch that trigger based on specific criteria, streamlining processes and enhancing functionality. <br /> <i>As a committed learner, I am enthusiastic about continuously expanding my skill set and exploring new opportunities for growth and innovation.</i>
           </p>
         </div>

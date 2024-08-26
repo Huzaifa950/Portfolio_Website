@@ -21,6 +21,9 @@
   border: 3px #000000 solid;
   border-radius: 50%;
 }
+.contactCardLeft{
+  padding: 50px 40px;
+}
 
 .contactCardLeftBody > div:not(:last-child){
   margin: 0 0 40px 0;
@@ -30,6 +33,9 @@
   display: flex;
   gap: 30px;
   align-items: center;
+}
+.contactCardLeftBody{
+  word-wrap: break-word;
 }
 
 .contactCardRight{
@@ -101,11 +107,6 @@
   display: inline-block;
 }
 
-/* .sendMessageIcon {
-  font-size: 24px;
-  color: #000;
-} */
-
 .hoverMessage {
   display: none;
   position: absolute;
@@ -159,6 +160,9 @@
     flex-direction: column;
     text-align: center;
   }
+  .contactCardLeftBody > div{
+    gap: 30px;
+  }
   .contactCardRightHeading > p{
     margin-bottom: 10px;
   }
@@ -179,4 +183,22 @@
     margin: 0 25px;
   }
 
+}
+@media (max-width: 500px){
+  .contactContainer{
+    padding: 40px 30px;
+  }
+  .contactBody{
+    max-width: 95%;
+    padding: 0 20px;
+  }
+  .contactCardLeftBody > div{
+    gap: 20px;
+  }
+  .contactCardLeft{
+    padding: 40px 30px;
+  }
+  .contactCardRight{
+    padding: 40px 30px;
+  }
 }

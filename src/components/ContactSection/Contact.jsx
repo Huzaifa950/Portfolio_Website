@@ -4,6 +4,7 @@ import { faStreetView, faMobileScreen, faEnvelope, faPaperPlane } from "@fortawe
 import { SocialIcon } from 'react-social-icons';
 import emailjs from 'emailjs-com';
 import ToastMessage from '../ReusableComponents/Toast'; // Adjust the path as needed
+import axios from 'axios';
 import './Contact.css';
 
 const Contact = () => {
@@ -16,6 +17,7 @@ const Contact = () => {
     message: ''
   });
   const [showToast, setShowToast] = useState(false); // Define state here
+  const [emailError, setEmailError] = useState('');
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -23,10 +25,41 @@ const Contact = () => {
       ...formData,
       [id]: value
     });
+
+    if (id === 'email') {
+      setEmailError(''); 
+    }
   };
 
-  const handleSubmit = (e) => {
+  const verifyEmailWithHunter = async (email) => {
+    const apiKey = 'c85e8d28bfc0f24e9b0aba984a13a61b21992a65'; // Replace with your actual API key
+    const hunterUrl = `https://api.hunter.io/v2/email-verifier?email=${email}&api_key=${apiKey}`;
+
+    try {
+      const response = await axios.get(hunterUrl);
+      const { result, score } = response.data.data;
+
+      if (result !== 'deliverable' || score < 80) {
+        setEmailError('Invalid Email Address');
+        return false;
+      }
+
+      setEmailError('');
+      return true;
+    } catch (error) {
+      setEmailError('Error verifying email. Please try again later.');
+      console.error('Error verifying email:', error);
+      return false;
+    }
+  };
+  
+  const handleSubmit = async(e) => {
     e.preventDefault();
+
+    const isEmailValid = await verifyEmailWithHunter(formData.email);
+    if (!isEmailValid) {
+      return;
+    }
 
     const templateParams = {
       from_name: formData.name,
@@ -113,6 +146,7 @@ const Contact = () => {
                   <div className="contactEmail" style={{ display: 'flex', flexDirection: 'column' }}>
                     <label htmlFor="email">Email</label>
                     <input type="email" id="email" value={formData.email} onChange={handleChange} placeholder="Enter Your Email" required />
+                    {emailError && <span className="emailError" style={{color:'red', textAlign:'center'}}>{emailError}</span>}
                   </div>
                 </div>
 

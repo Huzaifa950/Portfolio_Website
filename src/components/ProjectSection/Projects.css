@@ -87,4 +87,22 @@
     font-size: smaller;
     padding: 5px;
   }
+  .projectsArrowButton.projectsLeft {
+    transform: translateX(-160%) translateY(350%);
+  }
+  .projectsArrowButton.projectsRight {
+    transform: translateX(160%) translateY(350%);
+  }
+}
+
+@media (max-width: 500px){
+  .projectMain{
+    padding: 40px 40px;
+  }
+  .projectsArrowButton.projectsLeft {
+    transform: translateX(-160%) translateY(500%);
+  }
+  .projectsArrowButton.projectsRight {
+    transform: translateX(160%) translateY(500%);
+  }
 }

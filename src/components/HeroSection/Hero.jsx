@@ -10,6 +10,7 @@ import './Hero.css';
 // Hero component
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [uploadedImage, setUploadedImage] = useState(null);
   const roleRef = useRef(null);
 
   useEffect(() => {

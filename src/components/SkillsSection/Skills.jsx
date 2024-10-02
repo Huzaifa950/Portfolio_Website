@@ -8,6 +8,7 @@ import { FaCss3 } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 import { IoLogoGithub } from "react-icons/io5";
 import { TbBrandNetflix } from "react-icons/tb";
+import { SiZapier } from "react-icons/si";
 import './Skills.css';
 
 function Skills() {
@@ -48,6 +49,14 @@ function Skills() {
             <SkillProgressBar now={68} label={68} />
           </div>
 
+          <div className="Zap">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+              <p>Zappier</p>
+              <SiZapier style={{ color: '#E85C0D', fontSize: '30px', fontWeight: 'bold' }} />
+            </div>
+            <SkillProgressBar now={60} label={60} />
+          </div>
+
 
           <div className="NetSuite">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
@@ -74,6 +83,7 @@ function Skills() {
             </div>
             <SkillProgressBar now={30} label={30} />
           </div>
+
 
           {/* <div className="CSS">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
